@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="nav-left">
+            <button class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="logo">
+                <i class="fa-brands fa-youtube"></i>
+                <span>YouTube</span>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search videos..."
+            >
+
+            <button id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="nav-right">
+            <i class="fa-solid fa-video"></i>
+            <i class="fa-solid fa-bell"></i>
+
+            <div class="profile">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Categories -->
+    <section class="categories">
+        <button class="active">All</button>
+        <button>Programming</button>
+        <button>AI</button>
+        <button>JavaScript</button>
+        <button>React</button>
+        <button>Web Design</button>
+        <button>Gaming</button>
+        <button>Music</button>
+        <button>Podcasts</button>
+        <button>Technology</button>
+    </section>
+
+    <!-- Main Layout -->
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <ul>
+
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Shorts</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-play"></i>
+                    <span>Subscriptions</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-folder"></i>
+                    <span>Library</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>History</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>Liked Videos</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-download"></i>
+                    <span>Downloads</span>
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- Video Grid -->
+        <main class="videos" id="videoContainer">
+
+            <!-- Video Card 1 -->
+            <div class="video-card"
+                data-title="Learn HTML Full Course">
+
+                <img
+                    src="https://picsum.photos/400/220?random=1"
+                    alt="Video Thumbnail">
+
+                <div class="video-info">
+                    <h3>Learn HTML Full Course</h3>
+                    <p>Code Academy</p>
+                    <span>1.2M views • 2 weeks ago</span>
+                </div>
+
+            </div>
+
+            <!-- Video Card 2 -->
+            <div class="video-card"
+                data-title="CSS Flexbox Tutorial">
+
+                <img
+                    src="https://picsum.photos/400/220?random=2"
+                    alt="Video Thumbnail">
+
+                <div class="video-info">
+                    <h3>CSS Flexbox Tutorial</h3>
+                    <p>Web Dev Pro</p>
+                    <span>850K views • 1 month ago</span>
+                </div>
+
+            </div>
+
+            <!-- Video Card 3 -->
+            <div class="video-card"
+                data-title="JavaScript Crash Course">
+
+                <img
+                    src="https://picsum.photos/400/220?random=3"
+                    alt="Video Thumbnail">
+
+                <div class="video-info">
+                    <h3>JavaScript Crash Course</h3>
+                    <p>Programming Hub</p>
+                    <span>2.5M views • 3 weeks ago</span>
+                </div>
+
+            </div>
+
+            <!-- Video Card 4 -->
+            <div class="video-card"
+                data-title="Build Responsive Websites">
+
+                <img
+                    src="https://picsum.photos/400/220?random=4"
+                    alt="Video Thumbnail">
+
+                <div class="video-info">
+                    <h3>Build Responsive Websites</h3>
+                    <p>Frontend Master</p>
+                    <span>600K views • 5 days ago</span>
+                </div>
+
+            </div>
+
+            <!-- Video Card 5 -->
+            <div class="video-card"
+                data-title="React JS Beginner Guide">
+
+                <img
+                    src="https://picsum.photos/400/220?random=5"
+                    alt="Video Thumbnail">
+
+                <div class="video-info">
+                    <h3>React JS Beginner Guide</h3>
+                    <p>Tech World</p>
+                    <span>1.8M views • 4 months ago</span>
+                </div>
+
+            </div>
+
+            <!-- Video Card 6 -->
+            <div class="video-card"
+                data-title="Node JS Backend Tutorial">
+
+                <img
+                    src="https://picsum.photos/400/220?random=6"
+                    alt="Video Thumbnail">
+
+                <div class="video-info">
+                    <h3>Node JS Backend Tutorial</h3>
+                    <p>Backend Guru</p>
+                    <span>940K views • 2 months ago</span>
+                </div>
+
+            </div>
+
+            <!-- Video Card 7 -->
+            <div class="video-card"
+                data-title="AI Projects For Beginners">
+
+                <img
+                    src="https://picsum.photos/400/220?random=7"
+                    alt="Video Thumbnail">
+
+                <div class="video-info">
+                    <h3>AI Projects For Beginners</h3>
+                    <p>AI Developer</p>
+                    <span>720K views • 1 week ago</span>
+                </div>
+
+            </div>
+
+            <!-- Video Card 8 -->
+            <div class="video-card"
+                data-title="Portfolio Website Design">
+
+                <img
+                    src="https://picsum.photos/400/220?random=8"
+                    alt="Video Thumbnail">
+
+                <div class="video-info">
+                    <h3>Portfolio Website Design</h3>
+                    <p>Design Studio</p>
+                    <span>1.1M views • 3 months ago</span>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
